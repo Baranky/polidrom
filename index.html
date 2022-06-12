@@ -1,82 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baran web site</title>
-    <link rel="stylesheet" href="baran.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script     src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+  <title>wep sayfam</title>
+  <style >
+ .resimslider{
+  height :300px; 
+ } 
+  body{
+   padding-top:50px; 
+  }
+  .hakkimda{
+  background-color:#f2f2f2;  
+ }
+</style>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav  ızgara">
-            <div>
-            <a href="#" class="logo">BARAN</a>
-            </div>
-            <div class="nav__2" id="nav__2">
-                <ul class="ul__1">
-                    <li class="li__1"><a href="#anasayfa" class="li__2 active">Anasayfa</a></li>
-                    <li class="li__1"><a href="#hakkımda" class="li__2">Hakkımda</a></li>
-                    <li class="li__1"><a href="#iletişim" class="li__2">iletişim</a></li>
-                    <li class="li__1"><a href="#iş" class="li__2">iş </a></li>
-                    <li class="li__1"><a href="#iş" class="li__2">footer </a></li>
-
-                </ul>
-
-            </div>
-        </nav>
-    </header>
-
-    <section class="anasayfa__1" id="anasayfa">
-         <div class="anasayfa__2">
-             <h1 class="anasayfa__başlık">Merhaba ben baran inönü üniversitesi yazılım mühendisliği 1.sınıf öğrencesiyim </h1>
-           
-             <div class="galeri">
-                <img class="anasayfa__resim" style="width: 25%; height: 600px;"  src="messi.jpg" alt="">
-                <img class="anasayfa__resim" style="width: 25%; height: 600px;"  src="messi2.webp" alt="">
-                <img class="anasayfa__resim" style="width: 25%; height: 600px;"  src="messi3.jpeg" alt="">
-                <img class="anasayfa__resim" style="width: 25%; height: 600px;"  src="messi4.jpg" alt="">
-    
-             </div>
-         </div>
-        
-    </section>
-
-    <section class="hakkımda__1 section" id="hakkımda">
-        <h2 class="section-title">HAKKIMDA</h2>
-
-        <div class="hakkımda__container ızgara">
-            <div class="hakkımda__resim">
-                <img src="messi2.webp" alt="">
-            </div>
-
-            <div class="hakkımda__altbaşlık">
-                 <h2 class="hakkımda__altbaşlık2">Ben Baran</h2>
-                 <p class="hakkımda__yazı">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam perferendis eligendi doloremque, nihil maiores voluptatibus eveniet odit ipsam recusandae dolorem natus incidunt tempora distinctio ullam doloribus quam velit sunt dolores porro enim accusamus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, maiores.libero voluptas? Illum ea odit, aut maxime quas corporis nihil nesciunt. Eum quibusdam nemo adipisci velit recusandae nulla tenetur! Tempore iste eum sit id? Ipsam reiciendis provident quam dolore voluptates quaerat, veritatis nobis accusantium quo molestiae eligendi iste sed eveniet rerum repellendus. Nulla sunt modi, dolorem dolor.</p>
-            </div>
-        </div>
-    </section>
-
- <section class="iletişim section" id="iletişim">
-    <h2 class="section-title">İLETİŞİM</h2>
-
-</section>
-<section class="iş section" id="iş">
-    <h2 class="section-title">İŞ</h2>
-</section>
-
-<section class="iş section" id="iş">
-    <h2 class="section-title"></h2>
-</section>
-
-   <footer class="footer">
-    <p class="footer__title">BARAN</p>
-    <div class="footer__social">
-        <a href="#" class="footer__icon"><a href="https://github.com"><i class='fab fa-github' ></i></a></a>
-        <a href="#" class="footer__icon"><a href="https://www.instagram.com"><i class='fab fa-instagram' ></i></a></a>
-        <a href="#" class="footer__icon"><a href="https://twitter.com"><i class='fab fa-twitter' ></i></a></a>
+  <div class="alert alert-success alert-dismissible">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+   sayfama hosgeldiniz
     </div>
-</footer>
+  <!--- menu kismi !-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+   <a class="navbar-brand" href="#">BARAN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#demo">ANASAYFA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hakkimda">HAKKİMDA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#iletisim">İLETİSİM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#profil">PORTFLİO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+  <!-- slider !-->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 3"></button>
+    
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Messi1.jpeg" class="d-block w-100 resimslider" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Messi2.jpeg" class="d-block w-100 resimslider" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Messi.jpeg" class="d-block w-100 resimslider" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Messi.jpeg" class="d-block w-100 resimslider" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span> 
+  </button>
+</div>
+  <!-- hakkimda!-->
+  <section id="hakkimda" class="p-5 text-center hakkimda">
+    <div class="container"> 
+      <h3 class=" mb-3 font-weight-bold">hakkimda</h3>  
+      <hr>
+      <div class="container mt-5 mb-5">           
+  <img src="Messi.jpeg" class="rounded-circle" alt="Cinque Terre" width="210" height="210"> 
+</div>
+
+      
+      <p>
+Lorem ipsum, dolor sit ametghj gconsectetur adipisicing elit. Aperiam perferendis eligendi doloremque, nihil maiores it ipsam recusandae dolorem lam doloribus quam velit</p>
+ <p>unt dolores porro enim accusamus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, maiores.libero voluptas? Illum nemo adipisci velit recusandae
+   nulla tenetur! Tempore iste eum sit id? santium quo molestiae eligendi iste sed eveniet 
+  rerum repellendus. Nulla sunt modi, dolorem dolor
+      </p>
+      </hr>
+      </div>
+      <div class="container mt-3">
+  <h2>HTML</h2>
+  <div class="progress">
+    <div class="progress-bar" style="width:70%">70%</div>
+  </div>
+       <div class="container mt-3">
+  <h2>CSS</h2>
+  <div class="progress ">
+    <div class="progress-bar" style="width:60%">60%</div>
+  </div>
+         
+       <div class="container mt-3">
+  <h2>JAVASCRİPT</h2>
+  <div class="progress">
+    <div class="progress-bar" style="width:80%">80%</div>
+  </div>
+           
+       <div class="container mt-3">
+  <h2>C</h2>
+  <div class="progress">
+    <div class="progress-bar" style="width:90%">90%</div>
+  </div>
+         <div class="container mt-3">
+  <h2>JAVA</h2>
+  <div class="progress">
+    <div class="progress-bar" style="width:15%">15%</div>
+  </div>
+
+<div class="mt-5">
+  <button class="btn btn-success" onclick="indir()">CV İNDİR</button>
+</div>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Projelerim
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="yilan.html5">Yılan oyunu</a></li>
+    <li><a class="dropdown-item" href="dijital.html">Dijital saat</a></li>
+    <li><hr class="dropdown-divider"></li>
+  
+  </ul>
+</li>
+
+    <!--cv -->
+    <script>
+      function indir(){
+      var employees = [
+        {"adi":"baran kaya ",
+        "okul":"Inönü universitesi  ",
+         "bölüm":"Yazilim muhendisligi  ",
+    
+        "sinifi":"1  ",
+         "alani":"kriptoji  ",
+         "dil":"c,javas,python"}
+    ];
+    var doc = new jsPDF();   
+var img='data:image/jpeg;base64,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' 
+doc.addImage(img,"jpeg",150,15,50,50);
+
+
+employees.forEach(function(employee, i){
+    doc.text(10, 25 + (i * 10),
+        "Adi: " + employee.adi + "\n" +
+        "Okulu: " + employee.okul + "\n" +
+        "Bölümü: " + employee.bölüm + "\n" +
+        "Sinifi: " + employee.sinifi + "\n" +
+        "Alani: " + employee.alani + "\n" +
+        "Kullandigi diller: " +employee.dil
+        );
+});
+doc.save('CV.pdf');
+  }
+
+
+</script>
+
+ 
+  </section>
+ 
+  <style> 
+
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+    
+    </body>
+    
+    <h3 style="text-align: center;">İLETİŞİM</h3>
+    
+    <div id="iletişim" class="container">
+      <form action="/action_page.php">
+        <label for="fname">Ad</label>
+        <input type="text" id="fname" name="firstname" placeholder="Adınız">
+    
+        <label for="lname">SoyAd</label>
+        <input type="text" id="lname" name="lastname" placeholder="Soy adınız">
+    
+        <label for="country">Ülke</label>
+        <select id="country" name="country">
+          <option value="Türkiye">Türkiye</option>
+          <option value="Amerika">Amerika</option>
+          <option value="Kanada">Kanada</option>
+        </select>
+    
+        <label for="subject">Mesaj</label>
+        <textarea id="subject" name="subject" placeholder="Şikayetiniz ve ya ulaştırmak istediğiniz mesaj" style="height:200px"></textarea>
+    
+        <input type="submit" value="gönder">
+      </form>
+    </div>
+ 
+    
+    
 </body>
 </html>
